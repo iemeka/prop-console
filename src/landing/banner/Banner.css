@@ -1,0 +1,101 @@
+.banner-wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #fff;
+  padding: 20px  70px;
+  min-height: 700px;
+}
+
+.banner-wrap::after {
+  background: rgba(0, 0, 0, 0.6) url("../../assets/img/landingImg.jpeg");
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.banner-wrap .nav-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-wrap .nav-section .img-holder {
+  background: url("../../assets/img/logo.png");
+  width: 210px;
+  height: 60px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.banner-wrap .nav-section .nav-side {
+  width: 600px;
+}
+
+.banner-wrap .nav-section ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-wrap .nav-section li {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.banner-wrap .nav-section li:hover a {
+  padding-bottom: 5px;
+ border-bottom: 2px solid #fff;
+}
+
+.banner-wrap .nav-section li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.banner-wrap .nav-section li button {
+  padding: 10px 30px;
+  background-color: #167fcc;
+  color: #fff;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.banner-wrap .nav-section li button:hover {
+  background-color: #095a94;
+}
+
+.banner-wrap .banner-text{
+  padding-left: 50px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-wrap .banner-text h1{
+  max-width: 800px;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.banner-wrap .banner-text p{
+  font-size: 1.3rem;
+}
+
+.banner-wrap .banner-text p span{
+  font-weight: bold;
+}

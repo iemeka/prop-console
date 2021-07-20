@@ -1,0 +1,123 @@
+.package-wrap {
+  min-height: 900px;
+  background-color: #fcfef8;
+  display: flex;
+  flex-direction: column;
+}
+
+.package-wrap .top {
+  color: #167fcc;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100px;
+}
+
+.package-wrap .packages {
+  color: #666666;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.package-wrap .package {
+  background-color: white !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 630px;
+  padding: 50px;
+  background: url(../../assets/img/bottomleft.png) left bottom,
+    url(../../assets/img/topright.png) top right;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-top: 50px;
+}
+
+.package-wrap .package:hover{
+  box-shadow: 0 0 20px -5px#666666;
+}
+
+.package-wrap .package .img {
+  width: 320px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.package-wrap .package .img::after {
+  background: rgba(0, 0, 0, 0.4) url("../../assets/img/selling-package.jpeg");
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+  border-radius: 8px;
+}
+
+.package-wrap .package .img span {
+  background-color: #bbbcbfe0;
+  padding: 10px;
+  color: white;
+  z-index: 1;
+}
+
+.package-wrap .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.package-wrap .title h3 {
+  font-size: 2rem;
+  color: #167fcc;
+}
+
+.package-wrap .title p {
+  font-size: 1.2rem;
+}
+
+.package-wrap .cost p {
+  font-size: 1.2rem;
+}
+
+.package-wrap .cost p span {
+  color: #84bc33;
+  font-size: 1rem;
+}
+
+.package-wrap .btn button {
+  background: #167fcc;
+  color: white;
+  border: 0px;
+  padding: 13px 50px;
+  border-radius: 7px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.package-wrap .btn button:hover {
+  background: #095a94;
+
+}
+
+.package-wrap .packages #standard{
+  margin-left: 20px;
+  margin-right: 20px;
+}

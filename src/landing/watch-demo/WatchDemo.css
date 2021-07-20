@@ -1,0 +1,44 @@
+.demo-wrap {
+  min-height: 800px;
+  display: flex;
+  flex-direction: row;
+}
+
+.demo-wrap .right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 100px;
+}
+
+.demo-wrap .right h3 {
+  color: #167fcc;
+  font-size: 1.7rem;
+  max-width: 400px;
+}
+
+.demo-wrap .right p {
+  color: #666;
+  font-size: 1.2rem;
+  max-width: 400px;
+  margin: 15px 0;
+}
+
+.demo-wrap .left {
+  flex: 1;
+  height: 700px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.demo-wrap .left .player{
+  width: 100%;
+  max-width: 950px;
+  height: 500px;
+  background-color: rgb(194, 190, 190);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}

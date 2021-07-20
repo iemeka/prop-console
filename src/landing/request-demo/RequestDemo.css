@@ -1,0 +1,53 @@
+.request-wrap {
+  background: #fcfef8;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+}
+.request-wrap .content {
+  width: 100%;
+  max-width: 1000px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background: url("../../assets/img/linecircle.png") left bottom,
+    url("../../assets/img/line.png") right top, #25455c;
+  background-repeat: no-repeat;
+}
+
+.request-wrap .text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.request-wrap .text h4 {
+  font-size: 1.2rem;
+}
+
+.request-wrap .btn button {
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: white;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.request-wrap .btn .request {
+  background: transparent;
+  border: 1px solid #167fcc;
+}
+
+.request-wrap .btn .watch:hover,
+.request-wrap .btn .request:hover {
+  background: #095a94;
+}
+
+.request-wrap .btn .watch {
+  background: #167fcc;
+  border: 1px solid #167fcc;
+}

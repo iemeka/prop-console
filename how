@@ -1,0 +1,19 @@
+First - build out all pages and (make it responsible - ie. should be easily converted to a responsive design later)
+landing - nav has to stick .
+begin to make functional. -- done at this stage. 
+  - redux
+  - netlify login
+
+second - make responsive. | use link to view and work on a page,
+
+
+
+other pages - 
+shared component - 
+backgroung
+input fields - pass title and place holders as props
+input : text, password.
+button
+
+
+landing - 3:22pm

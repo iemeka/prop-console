@@ -1,0 +1,51 @@
+.think-wrap {
+  min-height: 800px;
+  display: flex;
+  flex-direction: row;
+}
+
+.think-wrap .left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 100px;
+}
+
+.think-wrap .left h3 {
+  color: #167fcc;
+  font-size: 1.6rem;
+}
+
+.think-wrap .left p {
+  color: #666;
+  font-size: 1.2rem;
+  max-width: 400px;
+  margin: 15px 0;
+}
+
+.think-wrap .left p span {
+  font-size: 0.89rem;
+}
+
+.think-wrap .right {
+  flex: 1;
+  background: url("../../assets/img/think.png");
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size:450px;
+  background-repeat: no-repeat;
+  height: 700px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 15px;
+}
+
+.think-wrap .right .player{
+  width: 100%;
+  max-width: 900px;
+  height: 600px;
+  background-color: rgb(194, 190, 190);
+  border-radius: 8px;
+}

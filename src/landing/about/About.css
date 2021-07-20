@@ -1,0 +1,51 @@
+.about-wrap {
+  display: flex;
+  flex-direction: row;
+  min-height: 800px;
+  position: relative;
+
+
+}
+
+.about-wrap .left{
+  flex: 1;
+  background: url("../../assets/img/aboutbg.png");
+  background-position-y:center;
+  background-position-x:120px;
+  background-size: 700px;
+  background-repeat: no-repeat;
+
+}
+
+.about-wrap .img{
+  width: 600px;
+  height: 600px;
+  background: url("../../assets/img/fam.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 100px;
+  left: 190px;
+
+}
+
+.about-wrap .right{
+  width: 800px;
+  padding-top: 160px;
+
+}
+
+.about-wrap .right h2{
+  color: #167fcc;
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+.about-wrap .right p{
+  color: #666666;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  max-width:610px;
+  line-height: 30px;
+}
