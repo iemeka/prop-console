@@ -1,0 +1,72 @@
+.background-wrap .white-background .content {
+  min-height: 500px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.background-wrap .content .forgot-pass {
+  color: #666;
+}
+.background-wrap .forgot-pass span {
+  color: #84bc33;
+  cursor: pointer;
+}
+
+.background-wrap .check-terms {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #797979;
+  font-size: 0.8rem;
+}
+
+.background-wrap .check-terms a {
+  text-decoration: none;
+  color: #547ed1;
+}
+
+.background-wrap .modal-content .img {
+  background: url(../../assets/img/auth/verify.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 150px;
+  width: 140px;
+}
+
+.background-wrap .modal-content h2 {
+  font-size: 1.4rem;
+  color: #548cd1;
+  margin: 10px;
+}
+
+.background-wrap .modal-content p {
+  font-size: 1rem;
+  color: #666666;
+  margin: 20px;
+}
+
+.background-wrap .modal-content .mark {
+  color: #363636;
+}
+
+/*  */
+.signup-modal .text-box-wrap {
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+}
+
+.signup-modal .text-box-wrap label {
+  font-size: 1rem;
+}
+
+.signup-modal .text-box-wrap input {
+  width: 100px;
+  text-align: center;
+}
+/*  */
+.background-wrap .modal-content .verified-signup-modal {
+  margin-bottom: 50px;
+}

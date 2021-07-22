@@ -1,0 +1,74 @@
+.background-wrap .white-background .content {
+  min-height: 400px;
+}
+
+.background-wrap .domain-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-wrap .domain-text h3 {
+  font-size: 1.2rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.background-wrap .domain-text p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 350px;
+  text-align: center;
+}
+
+.background-wrap .domain-btns {
+  width: 100%;
+  max-width: 320px;
+}
+
+.background-wrap .domain-btns button {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #296db3;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.background-wrap .domain-btns button:hover {
+  background-color: #89bee3;
+}
+
+.background-wrap .in-domain-btn {
+  text-align: left;
+  color: white;
+}
+
+.background-wrap .in-domain-btn h3 {
+  font-size: 1.1rem;
+}
+
+.background-wrap .in-domain-btn p {
+  font-size: 0.9rem;
+}
+
+.background-wrap .domain-control {
+  margin-left: auto;
+}
+
+.background-wrap .domain-control button {
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  border: 0;
+  background: transparent;
+}

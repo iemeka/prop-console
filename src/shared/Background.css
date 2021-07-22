@@ -1,0 +1,115 @@
+.background-wrap {
+  min-height: 100vh;
+  display: flex;
+}
+
+.background-wrap .white-background {
+  width: 100%;
+  max-width: 548px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.background-wrap .white-background form {
+  width: 450px;
+  min-height: 200px;
+  box-shadow: 0 0 30px -0px#c4c2c2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.background-wrap .white-background .header {
+  /* border: 1px solid red; */
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.background-wrap .white-background .logo {
+  background: url(../assets/img/auth/authlogo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 240px;
+  height: 40px;
+}
+
+.background-wrap .white-background .content {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.background-wrap .image-background {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.background-wrap .image-background::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4) url(../assets/img/auth/inhousebg.jpeg);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  flex: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.background-wrap .image-background .bg-text {
+  color: white;
+}
+
+.background-wrap .image-background h2 {
+  font-size: 3rem;
+}
+
+.background-wrap .image-background p {
+  font-size: 1.3rem;
+}
+
+.background-wrap .modal {
+  border: 1px solid red;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-wrap .modal-content{
+  background-color: white;
+  padding:10px;
+  height: 650px;
+  width: 100%;
+  max-width: 1100px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

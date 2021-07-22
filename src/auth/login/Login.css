@@ -1,0 +1,16 @@
+.background-wrap .white-background .content{
+  min-height: 380px;
+  padding-bottom: 10px;
+}
+
+.background-wrap .content .error-space-holder{
+  height: 40px;
+}
+
+.background-wrap .content .forgot-pass{
+  color: #666;
+}
+.background-wrap .content .forgot-pass span{
+  color: #84bc33;
+  cursor: pointer;
+}

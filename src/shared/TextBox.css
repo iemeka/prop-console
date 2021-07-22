@@ -1,0 +1,33 @@
+.text-box-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 100%;
+  max-width: 320px;
+}
+
+.text-box-wrap label {
+  color: #999999;
+  font-size: 1.2rem;
+  margin-bottom: 7px;
+}
+
+.text-box-wrap input {
+  border: 1px solid #f3f3f3;
+  background-color: #fafafa;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 1.2rem;
+  padding: 10px;
+  color: #666;
+
+}
+
+.text-box-wrap input::placeholder{
+  color: #d3cdcd;
+}
+
+.text-box-wrap input:focus {
+  outline: none;
+  border: 1px solid #ccc;
+}
