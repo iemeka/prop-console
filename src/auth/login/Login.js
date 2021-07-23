@@ -5,8 +5,8 @@ import SubmitBtn from "../../shared/SubmitBtn";
 import TextBox from "../../shared/TextBox";
 import "./Login.css";
 
+
 export default function Login() {
-  const logindata = "login component"
   return (
     <Background>
       <div className="error-space-holder">
@@ -14,7 +14,7 @@ export default function Login() {
       </div>
       <TextBox title="Login" placeholder="company@example.com" />
       <PasswordBox title="Password" />
-      <SubmitBtn title="SIGNIN" test={logindata} />
+      <SubmitBtn title="SIGNIN" />
       <div className="forgot-pass">
         <p>
           Forgot password? <span>Kindly reset password</span>

@@ -2,7 +2,7 @@ import "./Package.css";
 
 export default function Package() {
   return (
-    <div className="package-wrap">
+    <div className="package-wrap" id="landing-pricing">
       <div className="top">
         <h3>Selling Package</h3>
       </div>

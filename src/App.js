@@ -1,22 +1,19 @@
 import "./App.css";
-import Template from "./template/Template";
-// import OwnDomain from "./domain-setup/own-domain/OwnDomain";
-// import CustomName from "./domain-setup/custom-name/CustomName";
-// import Signup from "./auth/sign-up/Signup";
-// import Login from './auth/login/Login';
-// import DomainSetup from "./domain-setup/DomainSetup";
-// import ResetPassword from './auth/reset-password/ResetPassword';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Main from "./landing/Main";
+import Login from "./auth/login/Login";
+import Signup from "./auth/sign-up/Signup";
 
 function App() {
   return (
     <div className="app">
-      {/* <Login /> */}
-      {/* <ResetPassword /> */}
-      {/* <Signup /> */}
-      {/* <DomainSetup /> */}
-      {/* <CustomName /> */}
-      {/* <OwnDomain /> */}
-      <Template />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Main} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/signup" component={Signup} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

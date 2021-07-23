@@ -2,7 +2,7 @@ import "./WatchDemo.css";
 
 export default function WatchDemo() {
   return (
-    <div className="demo-wrap">
+    <div className="demo-wrap" id="landing-demo">
       <div className="left">
         <div className="player">
           <video className="player__video viewer" src="652333414.mp4"></video>

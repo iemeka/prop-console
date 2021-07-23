@@ -2,7 +2,7 @@ import "./About.css";
 
 export default function About() {
   return (
-    <div className="about-wrap">
+    <div className="about-wrap" id="landing-about">
       <div className="left">
       </div>
         <div className="img"></div>

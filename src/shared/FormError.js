@@ -1,8 +1,8 @@
 import "./FormError.css";
-export default function FormError() {
+export default function FormError(props) {
   return (
     <div className="error-wrap">
-      <p>Oh Sorry! Email address not found. Please Try again</p>
+      <p>{ props.errorMessage }</p>
     </div>
   );
 }

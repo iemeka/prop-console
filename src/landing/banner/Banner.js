@@ -1,17 +1,28 @@
 import "./Banner.css";
+import { Link } from "react-router-dom";
 
 export default function Banner() {
   return (
     <div className="banner-wrap">
       <div className="nav-section">
-        <div className="img-holder"></div>
+        <Link to="/">
+          <div className="img-holder"></div>
+        </Link>
         <div className="nav-side">
           <ul>
-            <li><a href="e">About Us</a></li>
-            <li><a href="e">Pricing</a></li>
-            <li><a href="e">Demo</a></li>
             <li>
-              <button>Get Started</button>
+              <a href="#landing-about">About Us</a>
+            </li>
+            <li>
+              <a href="#landing-pricing">Pricing</a>
+            </li>
+            <li>
+              <a href="#landing-demo">Demo</a>
+            </li>
+            <li>
+              <Link to="/signup">
+                <button>Get Started</button>
+              </Link>
             </li>
           </ul>
         </div>

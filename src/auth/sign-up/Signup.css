@@ -4,6 +4,10 @@
   padding-top: 20px;
 }
 
+.background-wrap .content .error-space-holder{
+  height:48px;
+}
+
 .background-wrap .content .forgot-pass {
   color: #666;
 }

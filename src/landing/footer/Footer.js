@@ -8,13 +8,13 @@ export default function Footer() {
         <div className="nav">
           <ul>
             <li>
-              <a href="ss">About Us</a>
+              <a href="#landing-about">About Us</a>
             </li>
             <li>
-              <a href="ss">Pricing</a>
+              <a href="#landing-pricing">Pricing</a>
             </li>
             <li>
-              <a href="s">Demo</a>
+              <a href="#landing-demo">Demo</a>
             </li>
           </ul>
         </div>
