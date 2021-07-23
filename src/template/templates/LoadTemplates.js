@@ -1,6 +1,6 @@
 import "./LoadTemplates.css";
-import temp1 from "../../assets/img/temp1.png";
-import temp2 from "../../assets/img/temp2.png";
+// import temp1 from "../../assets/img/temp1.png";
+// import temp2 from "../../assets/img/temp2.png";
 import temp3 from "../../assets/img/temp3.png";
 
 export default function LoadTemplates() {
