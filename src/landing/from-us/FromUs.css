@@ -15,7 +15,7 @@
 
 .from-us-wrap .title h1 {
   color: #167fcc;
-  font-size: clamp(16px, 5vw, 32px);
+  font-size: clamp(16px, 3vw, 32px);
 }
 
 .from-us-wrap .body {
