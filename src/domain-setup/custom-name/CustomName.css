@@ -1,35 +1,45 @@
-.background-wrap .white-background .content {
+.custom-domain-content {
   min-height: 400px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.background-wrap .domain-text {
+.custom-domain-content .domain-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.background-wrap .domain-text h3 {
+.custom-domain-content .domain-text h3 {
   font-size: 1.2rem;
   color: #333333;
   margin-bottom: 10px;
 }
 
-.background-wrap .domain-text p {
+.custom-domain-content .domain-text p {
   font-size: 1rem;
   color: #666;
   max-width: 350px;
   text-align: center;
 }
 
-.white-background .custom-name-box{
+.custom-domain-content .custom-name-box {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 
-.white-background .custom-http{
+.custom-domain-content .custom-http {
   max-width: 100px;
   margin-right: 10px;
+}
+
+@media only screen and (max-width: 380px) {
+  .custom-domain-content {
+  }
 }

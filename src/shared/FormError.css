@@ -3,6 +3,8 @@
   border-left: 3px solid #c44536;
   color: rgba(3, 3, 3, 0.705);
   max-width: 320px;
-  padding: 7px  10px;
+  padding:10px;
   font-size: 0.9rem;
+  height: 48px;
+  text-align: center;
 }

@@ -1,33 +1,39 @@
-.background-wrap .white-background .content {
+.domain-setup-content {
   min-height: 400px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.background-wrap .domain-text {
+.domain-setup-content .domain-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.background-wrap .domain-text h3 {
+.domain-setup-content .domain-text h3 {
   font-size: 1.2rem;
   color: #333333;
   margin-bottom: 10px;
 }
 
-.background-wrap .domain-text p {
+.domain-setup-content .domain-text p {
   font-size: 1rem;
   color: #666;
   max-width: 350px;
   text-align: center;
 }
 
-.background-wrap .domain-btns {
+.domain-setup-content .domain-btns {
   width: 100%;
   max-width: 320px;
 }
 
-.background-wrap .domain-btns button {
+.domain-setup-content .domain-btns button {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -42,28 +48,28 @@
   margin-bottom: 10px;
 }
 
-.background-wrap .domain-btns button:hover {
+.domain-setup-content .domain-btns button:hover {
   background-color: #89bee3;
 }
 
-.background-wrap .in-domain-btn {
+.domain-setup-content .in-domain-btn {
   text-align: left;
   color: white;
 }
 
-.background-wrap .in-domain-btn h3 {
+.domain-setup-content .in-domain-btn h3 {
   font-size: 1.1rem;
 }
 
-.background-wrap .in-domain-btn p {
+.domain-setup-content .in-domain-btn p {
   font-size: 0.9rem;
 }
 
-.background-wrap .domain-control {
+.domain-setup-content .domain-control {
   margin-left: auto;
 }
 
-.background-wrap .domain-control button {
+.domain-setup-content .domain-control button {
   color: #555;
   display: flex;
   align-items: center;

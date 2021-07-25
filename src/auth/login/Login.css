@@ -1,16 +1,27 @@
-.background-wrap .white-background .content{
-  min-height: 380px;
+.login-content{
+  min-height: 400px;
   padding-bottom: 10px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.background-wrap .content .error-space-holder{
+.login-content .error-space-holder{
   height: 40px;
 }
 
-.background-wrap .content .forgot-pass{
+.login-content .forgot-pass{
   color: #666;
 }
-.background-wrap .content .forgot-pass span{
+.login-content .forgot-pass span{
   color: #84bc33;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 380px) {
+  .login-content {
+    padding: 20px;
+  }
 }

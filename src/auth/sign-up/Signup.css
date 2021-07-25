@@ -1,36 +1,49 @@
-.background-wrap .white-background .content {
-  min-height: 500px;
+.signup-content {
+  min-height: 600px;
   padding-bottom: 10px;
   padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.background-wrap .content .error-space-holder{
-  height:48px;
+.signup-content .error-space-holder {
+  width: 100%;
+  max-width: 320px;
+  height: 48px;
 }
 
-.background-wrap .content .forgot-pass {
+.signup-content.forgot-pass {
   color: #666;
 }
-.background-wrap .forgot-pass span {
+.signup-content .forgot-pass span {
   color: #84bc33;
   cursor: pointer;
 }
 
-.background-wrap .check-terms {
+.signup-content .already-reg span {
+  color: #547ed1;
+  cursor: pointer;
+}
+
+.signup-content .check-terms {
+  padding:0  10px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   color: #797979;
-  font-size: 0.8rem;
+  font-size: calc(8px + 0.9vmin);
+  text-align: center;
 }
 
-.background-wrap .check-terms a {
+.signup-content .check-terms a {
   text-decoration: none;
   color: #547ed1;
 }
 
-.background-wrap .modal-content .img {
+.signup-content .modal-content .img {
   background: url(../../assets/img/auth/verify.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -39,19 +52,19 @@
   width: 140px;
 }
 
-.background-wrap .modal-content h2 {
+.signup-content .modal-content h2 {
   font-size: 1.4rem;
   color: #548cd1;
   margin: 10px;
 }
 
-.background-wrap .modal-content p {
+.signup-content .modal-content p {
   font-size: 1rem;
   color: #666666;
   margin: 20px;
 }
 
-.background-wrap .modal-content .mark {
+.signup-content .modal-content .mark {
   color: #363636;
 }
 
@@ -71,6 +84,15 @@
   text-align: center;
 }
 /*  */
-.background-wrap .modal-content .verified-signup-modal {
+.signup-content .modal-content .verified-signup-modal {
   margin-bottom: 50px;
 }
+
+
+@media only screen and (max-width: 380px) {
+  .signup-content {
+    padding: 20px;
+  }
+}
+
+

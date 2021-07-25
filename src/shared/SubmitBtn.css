@@ -13,6 +13,7 @@
   cursor: pointer;
   border-radius: 4px;
 }
+
 .submit-btn-wrap button:hover{
   background-color: #548cd1cb;
 }

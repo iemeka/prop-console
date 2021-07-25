@@ -10,7 +10,7 @@ export default function Background(props) {
         </div>
       </div> */}
       <div className="white-background">
-        <form onSubmit={props.onsubmit}>
+        <form onSubmit={props.onsubmit} >
           <div className="header">
             <div className="logo"></div>
           </div>

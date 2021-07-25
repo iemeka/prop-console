@@ -29,7 +29,7 @@ export default function Banner() {
               <a href="#landing-demo">Demo</a>
             </li>
             <li>
-              <Link to="/signup">
+              <Link to="/login">
                 <button>LOGIN</button>
               </Link>
               </li>

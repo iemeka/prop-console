@@ -10,6 +10,7 @@ export default function TextBox(props) {
         onChange={props.onchange}
         placeholder={props.placeholder}
         required={props.required}
+        autoComplete="off" 
       />
     </div>
   );
