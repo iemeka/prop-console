@@ -1,44 +1,86 @@
 .demo-wrap {
-  min-height: 800px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 30px;
 }
 
 .demo-wrap .right {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 100px;
+  margin-left: 5%;
 }
 
-.demo-wrap .right h3 {
+.demo-wrap h3 {
   color: #167fcc;
-  font-size: 1.7rem;
-  max-width: 400px;
+  font-size: clamp(16px, 3vw, 25.6px);
+  margin: 10px 0;
 }
 
 .demo-wrap .right p {
   color: #666;
-  font-size: 1.2rem;
+  font-size: calc(9px + 1.3vmin);
   max-width: 400px;
-  margin: 15px 0;
+  margin: 8px 0;
+  line-height: 1;
 }
 
 .demo-wrap .left {
-  flex: 1;
-  height: 700px;
+  width: 100%;
+  max-width: 850px;
+  background: url("../../assets/img/think.png");
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
   align-self: center;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 0 20px;
+  align-items: flex-end;
+  position: relative;
+  padding-bottom: 30%;
 }
 
-.demo-wrap .left .player{
-  width: 100%;
-  max-width: 950px;
-  height: 500px;
-  background-color: rgb(194, 190, 190);
+.demo-wrap .left .player {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(8, 8, 8, 0.062);
   border-radius: 8px;
-  margin-bottom: 10px;
+}
+
+.demo-wrap .small-screen-title {
+  display: none;
+}
+
+@media only screen and (max-width: 850px) {
+  .demo-wrap {
+    flex-direction: column;
+  }
+
+  .demo-wrap .right h3 {
+    display: none;
+  }
+
+  .demo-wrap .small-screen-title {
+    order: -2;
+    display: block;
+  }
+
+  .demo-wrap .left {
+    margin: 20px 0;
+    order: -1;
+    padding-bottom: 45%;
+  }
+  .demo-wrap .right {
+    margin-left: 0%;
+  }
+
+  .demo-wrap .right p {
+    max-width: 500px;
+  }
 }

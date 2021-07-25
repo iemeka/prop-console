@@ -3,6 +3,9 @@ import "./PeopleThink.css";
 export default function PeopleThink() {
   return (
     <div className="think-wrap">
+      <div className="small-screen-title">
+      <h3>What do people think about ProConsole?</h3>
+      </div>
       <div className="left">
         <h3>What do people think about ProConsole?</h3>
         <p>
@@ -21,7 +24,7 @@ export default function PeopleThink() {
       </div>
       <div className="right">
         <div className="player">
-          <video className="player__video viewer" src="652333414.mp4"></video>
+          {/* <video className="player__video viewer" src="652333414.mp4"></video> */}
         </div>
       </div>
     </div>

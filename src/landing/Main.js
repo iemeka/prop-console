@@ -17,10 +17,10 @@ export default function Main() {
       <FromUs />
       <About />
       <Package />
-      {/* <PeopleThink />
+      <PeopleThink />
       <WatchDemo />
       <RequestDemo />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }

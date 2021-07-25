@@ -1,51 +1,90 @@
 .think-wrap {
-  min-height: 800px;
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 30px;
 }
 
 .think-wrap .left {
+  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 100px;
+  margin-right: 5%;
 }
 
-.think-wrap .left h3 {
+.think-wrap h3 {
   color: #167fcc;
-  font-size: 1.6rem;
+  font-size: clamp(16px, 3vw, 25.6px);
+  margin: 10px 0;
 }
 
 .think-wrap .left p {
   color: #666;
-  font-size: 1.2rem;
+  font-size: calc(9px + 1.3vmin);
   max-width: 400px;
-  margin: 15px 0;
+  margin: 8px 0;
+  line-height: 1;
 }
 
 .think-wrap .left p span {
-  font-size: 0.89rem;
+  font-size: calc(7px + 1.2vmin);;
 }
 
 .think-wrap .right {
-  flex: 1;
+  width: 100%;
+  max-width: 850px;
   background: url("../../assets/img/think.png");
   background-position-x: right;
   background-position-y: bottom;
-  background-size:450px;
+  background-size: contain;
   background-repeat: no-repeat;
-  height: 700px;
   align-self: center;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: 0 15px;
+  position: relative;
+  padding-bottom: 30%;
 }
 
-.think-wrap .right .player{
-  width: 100%;
-  max-width: 900px;
-  height: 600px;
-  background-color: rgb(194, 190, 190);
+.think-wrap .right .player {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(8, 8, 8, 0.062);
   border-radius: 8px;
+}
+
+.think-wrap .small-screen-title {
+  display: none;
+}
+
+@media only screen and (max-width: 850px) {
+  .think-wrap {
+    flex-direction: column;
+  }
+
+  .think-wrap .left h3 {
+    display: none;
+  }
+
+  .think-wrap .small-screen-title {
+    order: -2;
+    display: block;
+  }
+
+  .think-wrap .right {
+    margin: 20px 0;
+    order: -1;
+    padding-bottom: 45%;
+  }
+
+  .think-wrap .left p {
+    max-width: 500px;
+ 
+  }
 }

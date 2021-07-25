@@ -24,7 +24,8 @@
 }
 
 .foot-wrap .top .nav {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .foot-wrap .top .nav ul {
@@ -51,7 +52,32 @@
   color: #444;
 }
 
-.foot-wrap .bottom{
+.foot-wrap .bottom {
   text-align: center;
   color: #666;
+  padding: 0 10px;
+  font-size: calc(9px + 1.3vmin);;
+}
+
+@media only screen and (max-width: 820px) {
+  .foot-wrap .top {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .foot-wrap .top .logo {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .foot-wrap .top .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foot-wrap .top .nav li {
+    margin-bottom: 13px;
+  }
 }
