@@ -3,11 +3,13 @@
   background-color: #fcfef8;
   display: flex;
   flex-direction: column;
+  padding: 0 10px;
+  padding-bottom: 50px;
 }
 
 .package-wrap .top {
   color: #167fcc;
-  font-size: 1.5rem;
+  font-size: clamp(16px, 5vw, 24px);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -22,6 +24,8 @@
   justify-content: center;
   align-items: flex-start;
   flex: 1;
+  padding: 0 5px;
+  flex-wrap: wrap;
 }
 
 .package-wrap .package {
@@ -39,7 +43,7 @@
   margin-top: 50px;
 }
 
-.package-wrap .package:hover{
+.package-wrap .package:hover {
   box-shadow: 0 0 20px -5px#666666;
 }
 
@@ -85,16 +89,12 @@
 }
 
 .package-wrap .title h3 {
-  font-size: 2rem;
+  font-size: clamp(16px, 5vw, 27px);
   color: #167fcc;
 }
 
-.package-wrap .title p {
-  font-size: 1.2rem;
-}
-
-.package-wrap .cost p {
-  font-size: 1.2rem;
+.package-wrap p {
+  font-size: calc(10px + 1vmin);
 }
 
 .package-wrap .cost p span {
@@ -114,10 +114,43 @@
 
 .package-wrap .btn button:hover {
   background: #095a94;
-
 }
 
-.package-wrap .packages #standard{
+.package-wrap .packages #standard {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .package-wrap .package {
+    height: 500px;
+    padding: 30px;
+  }
+
+  .package-wrap .package .img {
+    width: 220px;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .package-wrap .package {
+    height: 400px;
+    padding: 20px;
+  }
+
+  .package-wrap .package .img {
+    width: 220px;
+    height: 150px;
+  }
+  .package-wrap .packages #standard {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .package-wrap .btn button {
+    padding: 15px 45px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
 }

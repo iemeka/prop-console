@@ -3,9 +3,12 @@ import "./About.css";
 export default function About() {
   return (
     <div className="about-wrap" id="landing-about">
-      <div className="left">
+      <div className="mobile-title">
+        <h2>About Us</h2>
       </div>
+      <div className="left">
         <div className="img"></div>
+      </div>
       <div className="right">
         <h2>About Us</h2>
         <p>

@@ -21,7 +21,7 @@ export default function PeopleThink() {
       </div>
       <div className="right">
         <div className="player">
-          <video class="player__video viewer" src="652333414.mp4"></video>
+          <video className="player__video viewer" src="652333414.mp4"></video>
         </div>
       </div>
     </div>

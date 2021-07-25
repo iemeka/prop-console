@@ -1,51 +1,104 @@
 .about-wrap {
   display: flex;
   flex-direction: row;
-  min-height: 800px;
   position: relative;
-
-
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-top: 20px;
 }
 
-.about-wrap .left{
-  flex: 1;
+.about-wrap .mobile-title {
+  display: none;
+}
+
+.about-wrap .left {
   background: url("../../assets/img/aboutbg.png");
-  background-position-y:center;
-  background-position-x:120px;
-  background-size: 700px;
+  background-position-y: 25px;
+  background-position-x: 5px;
+  background-size: contain;
   background-repeat: no-repeat;
-
+  width: 100%;
+  max-width: 600px;
+  padding-bottom: 40%;
+  position: relative;
+  margin-right: 20px;
 }
 
-.about-wrap .img{
-  width: 600px;
-  height: 600px;
+.about-wrap .img {
+  position: absolute;
   background: url("../../assets/img/fam.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  top: 100px;
-  left: 190px;
-
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.about-wrap .right{
-  width: 800px;
-  padding-top: 160px;
-
+.about-wrap .right {
+  margin-right: 30px;
+  margin-left: 20px;
 }
 
-.about-wrap .right h2{
+.about-wrap h2 {
   color: #167fcc;
-  font-size: 2.4rem;
+  font-size: clamp(16px, 5vw, 38.4px);
   margin-bottom: 15px;
 }
 
-.about-wrap .right p{
+.about-wrap .right p {
   color: #666666;
-  font-size: 1.3rem;
+  font-size: calc(9px + 1.3vmin);
   margin-bottom: 15px;
-  max-width:610px;
-  line-height: 30px;
+  max-width: 620px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .about-wrap .left {
+    /* border: 1px solid red; */
+    margin-right: 0px;
+    margin-left: 0px;
+    max-width: 470px;
+  }
+
+  .about-wrap .right {
+    /* border: 1px solid red; */
+    margin-right: 15px;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .about-wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-wrap .mobile-title {
+    display: block;
+  }
+
+  .about-wrap .right h2 {
+    display: none;
+  }
+
+  .about-wrap .left {
+    background-position-y: center;
+    background-position-x: center;
+    padding-bottom: 75%;
+    margin-right: 0px;
+  }
+
+  .about-wrap .right p {
+    text-align: center;
+  }
+
+  .about-wrap .right {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
